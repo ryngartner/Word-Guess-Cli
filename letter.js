@@ -1,8 +1,14 @@
 function letter(character){
     this.letter = character,
-    this.character = false
-}
+    this.isGuessed = false
     this.guessed = function() {
-        if(this.letter === " ");
-        
+        if(this.isGuessed === true){
+            return this.letter
+        }
+        else return "_";    
     }
+}
+
+module.exports = letter;
+
+    
